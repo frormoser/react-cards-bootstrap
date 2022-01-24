@@ -29,7 +29,7 @@ function Cards() {
       {
         cards.map(card => (
         <div className='col-md-4' key={card.id}>
-          <Card/>    
+          <Card title={card.title} imageSource={card.image} />    
         </div> 
           ))
       }     
