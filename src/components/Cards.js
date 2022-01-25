@@ -6,19 +6,22 @@ import img3 from '../assets/img3.jpeg';
 
 const cards = [
   {
-    id: 1,
-    title: 'Cards Web',
-    image: img1
-  },
-  {
     id: 2,
     title: 'Cards Blog',
-    image: img2
+    image: img2,
+    url: "https://github.com/frormoser"
+  },
+  {
+    id: 1,
+    title: 'Cards Web',
+    image: img1,
+    url: "https://github.com/frormoser"
   },
   {
     id: 3,
     title: 'Cards Github',
-    image: img3
+    image: img3,
+    url: "https://github.com/frormoser"
   }
 ];
 
@@ -29,7 +32,7 @@ function Cards() {
       {
         cards.map(card => (
         <div className='col-md-4' key={card.id}>
-          <Card title={card.title} imageSource={card.image} />    
+          <Card title={card.title} imageSource={card.image} url={card.url} />    
         </div> 
           ))
       }     
